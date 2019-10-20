@@ -1,0 +1,134 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="" />
+    <title>StartWater</title>
+    <meta name="description" content="">		
+    <link rel="icon" type=text/css href="favicon.ico">
+
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
+
+    <style>
+        body {
+            /* background-color: #04a5f0; */
+            background-image: url("galaxy.jpeg");
+        }
+    </style>
+
+    <script>
+        function changeSelect(value) {
+            var valor = document.getElementById("valor");
+            if (value == 0) {
+                valor.value = 0;
+            } else {
+                valor.value = 150;
+            };
+        };
+    </script>
+</head>
+
+<body>
+
+    <!-- <div style="font-size: 4vw; font-family: Georgia, 'Times New Roman', Times, serif; width: 100%; text-align: center; color: white; margin-top: 1vw;">Start Water App</div> -->
+    <img src="logo 2.png" alt="logo" height="400" width="400" style="margin: 0 0 0 40vw;">
+    <div style="width: 100%">
+        <div id="" style="display: block; width: 100%; height: auto; margin: 0 0 -2vw 0;">
+            <div class="col-sm-5" style="margin: 0 0 0 2vw">
+                <div class="card sombra" style="width: 94.5vw; height: 23vw;">
+                    <div class="card-header sombra" style="background-color: lightgray; color: black; border: none; text-align: center;">
+                        <!-- <strong class="card-title">Cálculo de Economia de Água e Economia Financeira em Segundos</strong> -->
+                        <strong class="card-title">Calculation of Water and Money Savings in Seconds</strong>
+                    </div>
+
+                    <div class="card-body">
+                        <select id="" onchange="changeSelect(this.value)" type="text" class="form-control col-lg-5" style="margin: 0 auto 0 auto; float: left;">
+                            <option value="0" selected disabled>Select your City</option>
+                            <option value="1">Ribeirão Preto</option>
+                            <option value="2">Cravinhos</option>
+                            <option value="3">São Paulo</option>
+                            <option value="4">Franca</option>
+                        </select>
+                        <select id="" type="text" class="form-control col-lg-5" style="margin: 0 auto 0 auto; float: right;">
+                            <option selected disabled>Select how many males there are in your family</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3 or more</option>
+                        </select>
+                        <div style="margin: 1vw auto 0 auto; width: 50vw; float: left;">
+                            <!-- <div style="display: inline-block;">Nível de Precipitação para o Mês em Mililitros (Estimado):</div>  -->
+                            <div style="display: inline-block;">Precipitation for the Month in Mililiters (Estimated):</div> 
+                            <input id="valor" type="number" class="form-control col-lg-3" style="margin: 1vw 0 0 1vw; width: 7vw; display: inline-block;" value="0">
+                         </div>    
+                        <select id="" type="text" class="form-control col-lg-5" style="margin: 2vw auto 0 auto; float: right;">
+                            <option selected disabled>Select how many females there are in your family</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3 or more</option>
+                        </select>   
+                        <div style="margin: 1vw auto 0 auto; width: 60vw; float: left">
+                            <!-- <div style="display: inline-block;">Informe a largura e o comprimento do seu telhado em metros:</div>  -->
+                            <div style="display: inline-block;">Inform the width and length of your rooftop in meters:</div> 
+                            <div style="display: inline-block; margin-left: 1vw;">Width: </div> 
+                            <input type="number" class="form-control col-lg-3" style="margin: 1vw 0 0 1vw; width: 7vw; display: inline-block;" value="8">
+                            <div style="display: inline-block; margin-left: 1vw;">Lenght: </div> 
+                            <input type="number" class="form-control col-lg-3" style="margin: 1vw 0 0 1vw; width: 7vw; display: inline-block;" value="12">
+                        </div>   
+
+                        <!-- Botão Calcular -->
+                        <button type="button" data-toggle="modal" data-target="#botaoCalculo" class="col-lg-3 sombra" style="margin: 2.5vw auto 1vw 35vw; padding: .6vw 0;
+                    text-align: center; border-radius: .3vw; background: #04a5f0; color: #ffffff;
+                    cursor:pointer; text-align: center; float: left;">
+                            <i class="fas fa-calculator" style="margin: 0 1vw 0 0; font-size: 1.5vw;"></i><b>Calculate</b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="botaoCalculo" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content" style="width: 80vw; height: 40vw; margin: 0 0 0 -30vw; position: absolute;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="largemodalLabel">Detailed Calculation for the Month of October of 2019:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: left; list-style-type:none; padding: none; cursor: pointer">
+                    <div id="" style="margin-left: 2vw; text-align: center;" data-dismiss="modal">Annual Water Savings:  <span style="font-size: 1.5vw; color: blue">71.3%.</span></div>
+                    <div id="" style="margin: 2vw 0 0 2vw; text-align: center" data-dismiss="modal" style="margin-top: 2vw;">Water Costs Before the System: <span style="font-size: 1.5vw">R$16.302,00.</span> Water Costs After the System: <span style="font-size: 1.5vw">R$4.678,00.</span> Total Savings in your Pocket (In 1 Year):  <span style="font-size: 1.5vw; color: blue">R$11.623,00.</span></div>
+                    <!-- <div id="" style="margin: 2vw 0 0 2vw; text-align: center" data-dismiss="modal" style="margin-top: 2vw;">Tempo para Recuperar o Investimento Financeiro:  <span style="font-size: 1.5vw; color: blue">.</span></div> -->
+                    <div id="" style="margin: 2vw 0 0 2vw; text-align: center" data-dismiss="modal" style="margin-top: 2vw;">Reservoir Size (in cubic meters):  <span style="font-size: 1.5vw; color: blue">200.</span></div>
+                    <img src="grafico 1.png" alt="Gráfico consumo de água potável" height="330" width="750" style="margin: 1.5vw 0 0 19vw;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="vendors/jquery/dist/jquery.min.js"></script>
+<script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
