@@ -2,3 +2,5 @@
 LSTM algorithm developed during a challenge in the Nasa Space Apps Competition in 2019 to predict precipitation in a given location. With this algorithm, the app can use the predictions to calculate the water and money savings based on the width and length of a rooftop.
 
 ![alt text](https://github.com/rd-coutinho/Start-Water-App/blob/master/Imagem%20App%20-%20MVP.PNG)
+
+![alt text](https://github.com/rd-coutinho/Start-Water-App/blob/master/Imagem%20App%20-%20MVP.PNG)
