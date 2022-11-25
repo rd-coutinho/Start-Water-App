@@ -3,4 +3,4 @@ LSTM algorithm developed during a challenge in the Nasa Space Apps Competition i
 
 ![alt text](https://github.com/rd-coutinho/Start-Water-App/blob/master/Imagem%201%20App%20-%20MVP.PNG)
 
-![alt text](https://github.com/rd-coutinho/Start-Water-App/blob/master/Imagem%201%20App%20-%20MVP.PNG)
+![alt text](https://github.com/rd-coutinho/Start-Water-App/blob/master/Imagem%202%20App%20-%20MVP.PNG)
